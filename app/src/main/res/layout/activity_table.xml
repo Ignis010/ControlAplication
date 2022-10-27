@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".table">
+
+    <FrameLayout
+        android:id="@+id/onMainLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/onMain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="На главную" />
+    </FrameLayout>
+
+    <TableLayout
+        android:id="@+id/pictersTable"
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/onMainLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginTop="50dp"
+
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                tools:srcCompat="@tools:sample/avatars"
+                android:layout_marginRight="50dp"/>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                tools:srcCompat="@tools:sample/avatars"
+                android:layout_marginRight="50dp"/>
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="50dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                tools:srcCompat="@tools:sample/avatars" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
