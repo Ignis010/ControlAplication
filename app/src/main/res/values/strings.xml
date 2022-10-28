@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">ControlAplication</string>
+    <string name="app_name">ControlApplication</string>
+    <string name="onMain">На главную</string>
+    <string name="sword1">sword</string>
+    <string name="toTable">К таблице</string>
 </resources>

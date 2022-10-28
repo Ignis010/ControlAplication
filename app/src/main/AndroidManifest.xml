@@ -13,9 +13,25 @@
         android:theme="@style/Theme.ControlAplication"
         tools:targetApi="31">
         <activity
-            android:label="@string/app_name"
+            android:name=".image"
+            android:exported="false"
+            android:label="@string/app_name">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".list"
+            android:exported="false"
+            android:label="@string/app_name">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".table"
-            android:exported="false">
+            android:exported="false"
+            android:label="@string/app_name">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
